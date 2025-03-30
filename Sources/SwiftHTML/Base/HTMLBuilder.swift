@@ -29,4 +29,16 @@ public struct HTMLBuilder {
         return [expression]
     }
     
+    public static func buildEither(first component: [HTMLTag]) -> [HTMLTag] {
+        return component
+    }
+    
+    public static func buildEither(second component: [HTMLTag]) -> [HTMLTag] {
+        return component
+    }
+    
+    public static func buildOptional(_ component: [HTMLTag]?) -> [HTMLTag] {
+        return component ?? []
+    }
+    
 }
